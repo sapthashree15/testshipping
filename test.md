@@ -1,12 +1,12 @@
 <img src="images/IDSNlogo.png" width="300">
 
-::page{title="Final Hands-on lab: Shipping Calculator Application"}
+# Final Hands-on lab: Shipping Calculator Application
 
 ## Estimated Time: 60 minutes
 
 ## Objectives:
 
-In this lab, you will build a Simple Shipping Calculator Application that consists of an Admin Login page for authentication. Once authenticated, admin can access the Shipping Calculator dashboard to manage freight rates. The application will allow admin to add new freight rates by inputting package sizes and corresponding shipping rates. The entered freight rates will be displayed in a table format for easy reference.
+In this lab, you will build a Simple Shipping Calculator Application that consists of an Admin Login page for authentication. Once authenticated, the admin can access the Shipping Calculator dashboard to manage freight rates. The application will allow the admin to add new freight rates by inputting package sizes and corresponding shipping rates. The entered freight rates will be displayed in a table format for easy reference.
 
 ## Exercise 1: Setup a React Project
 
@@ -14,15 +14,15 @@ In this lab, you will build a Simple Shipping Calculator Application that consis
 
 **1.** Go to the project repository on this [link](https://github.com/ibm-developer-skills-network/utckx-shipping-calculator.git) which has the partially developed code for react code.
 
-**2.** Create a fork of the repository into your own. *You will need to have a github account of your own to do so.*
+**2.** Create a fork of the repository into your own. *You will need to have a GitHub account of your own to do so.*
 
 <img src="images/Fork-repo.png" width="75%"/> 
 
-**3.** Go to your repository and copy the clone url.
+**3.** Go to your repository and copy the clone URL.
 
 <img src="images/repo-url.png" width="75%"/> 
 
-**4.** In the Visual studio code, Open a terminal window by using the menu in the editor: Terminal > New Terminal.
+**4.** In the Visual Studio code, Open a terminal window by using the menu in the editor: Terminal > New Terminal.
 
 <img src="images/vs-code-starting-img.png" width="75%">
 
@@ -408,7 +408,7 @@ Object.keys(USCities).forEach((country) => {
 
 **Task 4**: Implement the Chart Component
 
-1. This React component, known as Chart, is designed to display a shipping rate chart based on the provided freightRates and packageWeightUnit props. The chart is encapsulated within a div element with the class name "chart-container" for styling purposes.
+1. This React component, known as Chart, is designed to display a shipping rate chart based on the provided freightrates and packageWeightUnit props. The chart is encapsulated within a div element with the class name "chart-container" for styling purposes.
 
 2. The table consists of a header row with three columns: "Package Weight," "Destination," and "Shipping Rate." The body of the table is dynamically generated based on the freightRates prop. For each freight rate in the array, a row is created with three cells:
 
@@ -485,7 +485,7 @@ Once the Chart component is defined, it can be integrated into the shipping calc
 
 3. Include additional features such as sorting the freight rates table based on different columns, filtering rates, or displaying a chart visualization of the rates.
 
-## Launch and view your react app on the browser
+## Launch and view your React app on the browser
 
 1. Make sure you are in the utckx-shipping-calculator directory and run the server using the following command.
 
