@@ -140,8 +140,9 @@ onChange={(e) => setPassword(e.target.value)}
 5. The finalized LoginForm.js should resemble the following:
 
 <details>
-<Summary>Click to view the code</Summary>
-```
+<summary>Click to view the code</summary>
+    
+```jsx
 import React, { useState } from 'react';
 
 const LoginForm = ({ onLogin }) => {
@@ -219,8 +220,9 @@ const handleLogin = () => {
 For example, if the unit is 'kg', it maps the cities in India to an array of objects where each object has a value and label property representing the city and country. The resulting array contains city options suitable for populating a dropdown or selection list in the user interface.
 
 <details>
-<Summary>Click to view the code</Summary>
-```
+<summary>Click to view the code</summary>
+
+```javascript
 const getCityOptions = () => {
     if (packageWeightUnit === 'kg') {
       return Object.keys(IndiaCities).flatMap((country) =>
@@ -232,10 +234,8 @@ const getCityOptions = () => {
       );
     }
   };
-
 ```
 </details>
-
 
 5. Use conditional rendering to display different components based on the isLoggedIn state:
 
@@ -261,12 +261,12 @@ const getCityOptions = () => {
 
 - Pass the freightRates array as a prop to the Chart component.
 
-
-8. Below is the finalized code for the ShippingCalculator.js file.
+9. Below is the finalized code for the ShippingCalculator.js file.
 
 <details>
-<Summary>Click to view the code</Summary>
-```
+<summary>Click to view the code</summary>
+
+```javascript
 import React, { useState } from 'react';
 import Chart from './Chart';
 import LoginForm from './LoginForm';
@@ -385,7 +385,6 @@ const ShippingCalculator = () => {
 };
 
 export default ShippingCalculator;
-
 ```
 </details>
 
@@ -438,7 +437,8 @@ The freightRates prop should be an array of objects, each containing information
 
 <details>
 <summary>Solution</summary>
-```
+
+```javascript
 import React from 'react';
 
 const Chart = ({ freightRates, packageWeightUnit }) => {
@@ -468,7 +468,6 @@ const Chart = ({ freightRates, packageWeightUnit }) => {
 };
 
 export default Chart;
-
 ```
 </details>
 
